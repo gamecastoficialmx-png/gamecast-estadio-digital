@@ -1997,6 +1997,7 @@ body.high-contrast {
   --cyan-dim:           #00cccc;
   --cyan-glow:          rgba(0,255,255,0.2);
   --magenta:            #ff66ff;
+  --violet:             #aa88ff;
 }
 
 body.high-contrast .nav {
