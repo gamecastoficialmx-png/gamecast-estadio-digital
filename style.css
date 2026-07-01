@@ -513,9 +513,17 @@ ul { list-style: none; }
   color: #fff;
 }
 
-.platform-icon-oc {
-  background: linear-gradient(135deg, #4FA9E3, #2563EB);
-  font-size: 14px;
+.platform-icon-patreon {
+  background: linear-gradient(135deg, #FF424D, #E6394A);
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font);
+}
+
+.platform-icon-paypal {
+  background: linear-gradient(135deg, #003087, #009CDE);
+  font-size: 13px;
   font-weight: 700;
   color: #fff;
   font-family: var(--font);
