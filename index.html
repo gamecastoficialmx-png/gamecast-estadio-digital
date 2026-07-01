@@ -117,11 +117,14 @@
         <h2>¿A dónde va tu donación?</h2>
         <p>Usamos plataformas 100% open source y transparentes. Sin intermediarios opacos.</p>
       </div>
-      <div class="platforms-grid">
+      <div class="platforms-grid platforms-grid-2">
 
         <div class="platform-card featured">
           <div class="platform-badge">Recomendado</div>
-          <div class="platform-icon platform-icon-ko">☕</div>
+          <div class="platform-icon platform-icon-kofi">
+            <img src="https://storage.ko-fi.com/cdn/brandasset/kofi_s_logo_nolabel.png" alt="Ko-fi" width="34" height="34" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="platform-icon-fallback" style="display:none">☕</div>
+          </div>
           <h3>Ko-fi</h3>
           <p class="platform-desc">Donación única sin registro obligatorio. Ideal para apoyar rápidamente. <strong>Sin comisión de plataforma</strong>; solo aplica la tarifa de PayPal.</p>
           <ul class="platform-features">
@@ -135,21 +138,10 @@
         </div>
 
         <div class="platform-card">
-          <div class="platform-icon platform-icon-patreon">P</div>
-          <h3>Patreon</h3>
-          <p class="platform-desc">Apoya de forma mensual y sé parte de la comunidad exclusiva de Game Cast. Ideal para apoyo recurrente.</p>
-          <ul class="platform-features">
-            <li>✔ Apoyo mensual recurrente</li>
-            <li>✔ Pago con tarjeta o PayPal</li>
-            <li>✔ Disponible en México</li>
-            <li>✔ Plataforma reconocida globalmente</li>
-          </ul>
-          <!-- TODO: reemplaza el href con tu link de Patreon: https://patreon.com/TUNOMBRE -->
-          <a href="https://patreon.com/" target="_blank" rel="noopener" class="btn btn-outline platform-btn">Apoyar en Patreon</a>
-        </div>
-
-        <div class="platform-card">
-          <div class="platform-icon platform-icon-paypal">PP</div>
+          <div class="platform-icon platform-icon-paypal-logo">
+            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" width="34" height="34" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="platform-icon-fallback" style="display:none">PP</div>
+          </div>
           <h3>PayPal</h3>
           <p class="platform-desc">La forma más directa de donar. Sin plataforma intermediaria, el dinero llega directo a nuestro PayPal.</p>
           <ul class="platform-features">
@@ -379,7 +371,6 @@
           <h5>Donaciones</h5>
           <!-- TODO: actualiza estos hrefs con tus links reales -->
           <a href="https://ko-fi.com/" target="_blank" rel="noopener">Ko-fi</a>
-          <a href="https://patreon.com/" target="_blank" rel="noopener">Patreon</a>
           <a href="https://paypal.me/" target="_blank" rel="noopener">PayPal</a>
         </div>
         <div class="footer-col">
