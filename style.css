@@ -1872,3 +1872,163 @@ section[id] {
     right: 20px;
   }
 }
+
+/* ============================
+   ACCESIBILIDAD — widget
+   ============================ */
+.a11y-widget {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 200;
+}
+
+.a11y-toggle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-dark);
+  color: var(--text-on-dark-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  transition: background .2s, border-color .2s, color .2s, box-shadow .2s;
+}
+
+.a11y-toggle:hover {
+  background: var(--bg-card-alt);
+  border-color: var(--border-cyan);
+  color: var(--cyan);
+  box-shadow: var(--shadow-cyan);
+}
+
+.a11y-panel {
+  position: absolute;
+  bottom: 58px;
+  left: 0;
+  width: 242px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--r-md);
+  padding: 18px 16px;
+  box-shadow: var(--shadow-card);
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeUp .2s ease both;
+}
+
+.a11y-panel.open { display: flex; }
+
+.a11y-panel-title {
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-on-dark-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.a11y-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.a11y-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-on-dark-muted);
+}
+
+.a11y-btns {
+  display: flex;
+  gap: 6px;
+}
+
+.a11y-btns button {
+  flex: 1;
+  padding: 7px 6px;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--bg-mid);
+  border: 1.5px solid var(--border-dark);
+  border-radius: var(--r-sm);
+  color: var(--text-on-dark-muted);
+  cursor: pointer;
+  transition: border-color .2s, color .2s, background .2s;
+  white-space: nowrap;
+}
+
+.a11y-btns button:hover:not(:disabled) {
+  border-color: var(--border-cyan);
+  color: var(--cyan);
+}
+
+.a11y-btns button.a11y-active {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: var(--cyan-glow);
+}
+
+.a11y-btns button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+/* ============================
+   ALTO CONTRASTE
+   ============================ */
+body.high-contrast {
+  --bg-deep:            #000;
+  --bg-mid:             #000;
+  --bg-card:            #0a0a0a;
+  --bg-card-alt:        #111;
+  --border-dark:        rgba(255,255,255,0.45);
+  --border-cyan:        #00ffff;
+  --text-on-dark:       #fff;
+  --text-on-dark-muted: #fff;
+  --text-on-dark-dim:   rgba(255,255,255,0.75);
+  --cyan:               #00ffff;
+  --cyan-dim:           #00cccc;
+  --cyan-glow:          rgba(0,255,255,0.2);
+  --magenta:            #ff66ff;
+}
+
+body.high-contrast .nav {
+  background: #000 !important;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+
+body.high-contrast .platform-card,
+body.high-contrast .transparency-card,
+body.high-contrast .contact-form-wrap,
+body.high-contrast .a11y-panel {
+  border-color: rgba(255,255,255,0.4);
+}
+
+body.high-contrast .platform-icon-kofi,
+body.high-contrast .platform-icon-paypal-logo {
+  border-color: rgba(255,255,255,0.5);
+}
+
+body.high-contrast .form-group input,
+body.high-contrast .form-group select,
+body.high-contrast .form-group textarea {
+  background: #111;
+  border-color: rgba(255,255,255,0.45);
+  color: #fff;
+}
+
+body.high-contrast .btn-outline {
+  border-color: rgba(255,255,255,0.6);
+  color: #fff;
+}
+
+body.high-contrast .scroll-progress {
+  background: #00ffff;
+}
