@@ -9,15 +9,48 @@
   <meta property="og:description" content="Comunidad independiente dedicada a videojuegos, esports y cultura gamer en español." />
   <meta property="og:image" content="logo.png" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gamecastestadiodigital.netlify.app/" />
   <meta name="theme-color" content="#00E5FF" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apoya Game Cast Estadio Digital" />
+  <meta name="twitter:description" content="Comunidad independiente dedicada a videojuegos, esports y cultura gamer en español. Tu apoyo mantiene el contenido vivo y accesible para todos." />
+  <meta name="twitter:image" content="https://gamecastestadiodigital.netlify.app/logo.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gamecastestadiodigital.netlify.app/" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="logo.png" as="image" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Game Cast Estadio Digital",
+    "description": "Comunidad independiente dedicada a videojuegos, esports y cultura gamer en español.",
+    "url": "https://gamecastestadiodigital.netlify.app/",
+    "logo": "https://gamecastestadiodigital.netlify.app/logo.png",
+    "email": "gamecast.oficialmx@gmail.com",
+    "sameAs": [
+      "https://www.tiktok.com/@estadio.digital.g",
+      "https://discord.gg/Uu6ybhuUd",
+      "https://www.twitch.tv/Game_Cast_Estadio_Digital",
+      "https://ko-fi.com/gamecastestadiodigital"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-inner">
+      <img src="logo.png" alt="Game Cast" class="loader-logo" width="72" height="72" />
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
 
   <!-- BARRA DE PROGRESO DE SCROLL -->
   <div class="scroll-progress" id="scroll-progress"></div>
@@ -56,6 +89,10 @@
       <div class="hero-logo-wrap">
         <img src="logo.png" alt="Game Cast Estadio Digital" class="hero-logo" width="120" height="120" />
       </div>
+      <div class="hero-year-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Desde 2024
+      </div>
       <div class="hero-badge">🎮 Comunidad Gamer en Español</div>
       <h1 class="hero-title">
         El juego no para<br/>
@@ -67,7 +104,7 @@
         libre y accesible para todos.
       </p>
       <div class="hero-actions">
-        <a href="#donar" class="btn btn-primary">Apoyar ahora</a>
+        <a href="#donar" class="btn btn-primary hero-cta-pulse">Apoyar ahora</a>
         <a href="#contacto" class="btn btn-ghost">Contáctanos</a>
       </div>
       <div class="hero-stats">
@@ -77,8 +114,8 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-num">Open</span>
-          <span class="stat-label">Sin plataformas cerradas</span>
+          <span class="stat-num">2024</span>
+          <span class="stat-label">Año de fundación</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
@@ -93,17 +130,29 @@
   <section class="about-strip">
     <div class="container about-grid">
       <div class="about-card">
-        <span class="about-icon">🎙️</span>
+        <div class="about-icon-svg" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/>
+          </svg>
+        </div>
         <h3>Podcast &amp; streams</h3>
         <p>Episodios semanales sobre los últimos lanzamientos, torneos y cultura gamer.</p>
       </div>
       <div class="about-card">
-        <span class="about-icon">🏟️</span>
+        <div class="about-icon-svg" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/><path d="M7 8h2m6 0h2m-7 4h4"/>
+          </svg>
+        </div>
         <h3>Cobertura de torneos</h3>
         <p>Análisis en vivo de competencias de esports regionales e internacionales.</p>
       </div>
       <div class="about-card">
-        <span class="about-icon">🤝</span>
+        <div class="about-icon-svg" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
         <h3>Comunidad real</h3>
         <p>Discord activo, eventos colaborativos y espacio para jugadores de todos los niveles.</p>
       </div>
@@ -111,7 +160,7 @@
   </section>
 
   <!-- DONACIONES -->
-  <section class="section" id="donar">
+  <section class="section section-glow-top" id="donar">
     <div class="container">
       <div class="section-head">
         <h2>¿A dónde va tu donación?</h2>
@@ -158,7 +207,7 @@
   </section>
 
   <!-- TRANSPARENCIA -->
-  <section class="section" id="transparencia">
+  <section class="section section-glow-top" id="transparencia">
     <div class="container transparency-inner">
       <div class="transparency-text">
         <h2>Transparencia total</h2>
@@ -188,6 +237,10 @@
         </ul>
       </div>
       <div class="transparency-card">
+        <div class="budget-date-badge">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Actualizado: Julio 2026
+        </div>
         <h4>¿Para qué se usa el dinero?</h4>
         <div class="budget-bars">
           <div class="budget-item">
@@ -213,12 +266,16 @@
           </div>
         </div>
         <p class="budget-note">Actualizado mensualmente. Consulta el detalle en nuestro Discord →</p>
+        <a href="https://discord.gg/Uu6ybhuUd" target="_blank" rel="noopener" class="transparency-report-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.03.056a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          Ver reporte completo en Discord
+        </a>
       </div>
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section class="section section-contact" id="contacto">
+  <section class="section section-contact section-glow-top" id="contacto">
     <div class="container contact-inner">
       <div class="contact-info">
         <h2>¿Tienes preguntas?</h2>
@@ -364,6 +421,23 @@
           <span class="logo-text">Game Cast <em>Estadio Digital</em></span>
         </a>
         <p>Comunidad gamer independiente. Hecho con ❤️ por jugadores, para jugadores.</p>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@estadio.digital.g?is_from_webapp=1&sender_device=pc" class="footer-social-btn" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+          <a href="https://discord.gg/Uu6ybhuUd" class="footer-social-btn" target="_blank" rel="noopener" aria-label="Discord">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.03.056a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          </a>
+          <a href="https://www.twitch.tv/Game_Cast_Estadio_Digital" class="footer-social-btn" target="_blank" rel="noopener" aria-label="Twitch">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+          </a>
+          <a href="mailto:gamecast.oficialmx@gmail.com" class="footer-social-btn" aria-label="Correo electrónico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://ko-fi.com/gamecastestadiodigital" class="footer-social-btn" target="_blank" rel="noopener" aria-label="Ko-fi">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </a>
+        </div>
       </div>
       <div class="footer-links">
         <div class="footer-col">
@@ -383,12 +457,22 @@
           <a href="mailto:gamecast.oficialmx@gmail.com">Email</a>
           <a href="#transparencia">Transparencia</a>
         </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="#contacto">Privacidad</a>
+          <a href="#contacto">Términos</a>
+          <a href="https://netlify.com" target="_blank" rel="noopener">Open Source</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>© 2026 Game Cast Estadio Digital · Contenido libre · <a href="#contacto">Contacto</a></p>
-        <p class="footer-tech">Sitio alojado en <strong>Netlify</strong> · Plataformas open source</p>
+        <div class="footer-bottom-links">
+          <p style="font-size:13px;color:var(--text-on-dark-dim)">© 2026 Game Cast Estadio Digital · Contenido libre</p>
+          <a href="#contacto">Contacto</a>
+          <a href="#transparencia">Transparencia</a>
+        </div>
+        <p class="footer-tech">Alojado en <strong>Netlify</strong> · Código abierto</p>
       </div>
     </div>
   </footer>
