@@ -3,24 +3,6 @@
    ========================================= */
 
 /* =============================================
-   PAGE LOADER
-   ============================================= */
-(function () {
-  var loader = document.getElementById('page-loader');
-  if (!loader) return;
-  function hide() {
-    loader.classList.add('hidden');
-    setTimeout(function () { loader.style.display = 'none'; }, 500);
-  }
-  if (document.readyState === 'complete') {
-    hide();
-  } else {
-    window.addEventListener('load', hide);
-    setTimeout(hide, 2500); // fallback máximo
-  }
-})();
-
-/* =============================================
    HAMBURGER MENU
    ============================================= */
 (function () {
@@ -229,7 +211,7 @@
    ============================================= */
 (function () {
   const els = document.querySelectorAll(
-    '.platform-card, .tier-card, .about-card, .transparency-card, .contact-form-wrap, .transparency-text, .contact-info, .budget-item, .transparency-list li'
+    '.platform-card, .tier-card, .about-card, .transparency-card, .contact-form-wrap'
   );
   if (!els.length || !('IntersectionObserver' in window)) return;
 
@@ -283,7 +265,7 @@
       heroLine2: 'si juegas con nosotros.',
       heroSub:   'Game Cast Estadio Digital es una comunidad independiente dedicada a videojuegos, deportes electrónicos y cultura gamer. Tu apoyo mantiene el contenido vivo, libre y accesible para todos.',
       heroCta1: 'Apoyar ahora', heroCta2: 'Contáctanos',
-      stat1: 'Contenido gratuito', stat2: 'Año de fundación', stat3: 'Sin publicidad invasiva',
+      stat1: 'Contenido gratuito', stat2: 'Sin plataformas cerradas', stat3: 'Sin publicidad invasiva',
       navDonar: 'Donar', navTrans: 'Transparencia', navCont: 'Contacto', navCta: 'Apoya ahora',
       hamburger: 'Abrir menú',
       about1t: 'Podcast & streams',
@@ -327,7 +309,7 @@
       succH: '¡Gracias por comunicarte con nosotros!',
       succP: 'Tu mensaje fue enviado correctamente.<br/>Te responderemos pronto. 🎮',
       footerBrand:    'Comunidad gamer independiente. Hecho con ❤️ por jugadores, para jugadores.',
-      footerCols:     ['Donaciones', 'Comunidad', 'Info', 'Legal'],
+      footerCols:     ['Donaciones', 'Comunidad', 'Info'],
       footerCopy:     '© 2026 Game Cast Estadio Digital · Contenido libre ·',
       footerTechPre:  'Sitio alojado en',
       footerTechPost: '· Plataformas open source',
@@ -339,7 +321,7 @@
       heroLine2: 'when you play with us.',
       heroSub:   'Game Cast Estadio Digital is an independent community dedicated to video games, esports and gaming culture. Your support keeps the content alive, free and accessible for everyone.',
       heroCta1: 'Support now', heroCta2: 'Contact us',
-      stat1: 'Free content', stat2: 'Year founded', stat3: 'No invasive ads',
+      stat1: 'Free content', stat2: 'No closed platforms', stat3: 'No invasive ads',
       navDonar: 'Donate', navTrans: 'Transparency', navCont: 'Contact', navCta: 'Support now',
       hamburger: 'Open menu',
       about1t: 'Podcast & streams',
@@ -383,7 +365,7 @@
       succH: 'Thanks for reaching out!',
       succP: 'Your message was sent successfully.<br/>We\'ll get back to you soon. 🎮',
       footerBrand:    'Independent gaming community. Made with ❤️ by players, for players.',
-      footerCols:     ['Donations', 'Community', 'Info', 'Legal'],
+      footerCols:     ['Donations', 'Community', 'Info'],
       footerCopy:     '© 2026 Game Cast Estadio Digital · Free content ·',
       footerTechPre:  'Hosted on',
       footerTechPost: '· Open source platforms',
