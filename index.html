@@ -115,12 +115,12 @@
     <div class="container">
       <div class="section-head">
         <h2>¿A dónde va tu donación?</h2>
-        <p>Usamos plataformas 100% open source y transparentes. Sin intermediarios opacos.</p>
+        <p>Tu donación llega directamente a nosotros. Sin comisiones de plataforma ni intermediarios opacos.</p>
       </div>
       <div class="platforms-grid platforms-grid-2">
 
         <div class="platform-card featured">
-          <div class="platform-badge">Recomendado</div>
+          <div class="platform-badge" id="platform-badge-featured">Recomendado</div>
           <div class="platform-icon platform-icon-kofi">
             <img src="https://storage.ko-fi.com/cdn/brandasset/kofi_s_logo_nolabel.png" alt="Ko-fi" width="34" height="34" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
             <div class="platform-icon-fallback" style="display:none">☕</div>
@@ -149,7 +149,8 @@
             <li>✔ Seguro y confiable</li>
             <li>✔ Donación en cualquier monto</li>
           </ul>
-          <a href="https://www.paypal.com/donate/?hosted_button_id=ZZC27ERZF42ZC" target="_blank" rel="noopener" class="btn btn-outline platform-btn">Donar por PayPal</a>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=ZZC27ERZF42ZC" target="_blank" rel="noopener" class="btn btn-outline platform-btn platform-btn-soon" aria-disabled="true" tabindex="-1">Donar por PayPal</a>
+          <p class="platform-soon-note" id="platform-soon-note">⚙️ Enlace en configuración · disponible pronto</p>
         </div>
 
       </div>
@@ -161,27 +162,27 @@
     <div class="container transparency-inner">
       <div class="transparency-text">
         <h2>Transparencia total</h2>
-        <p>Creemos que quien dona merece saber exactamente a dónde va su dinero. Por eso usamos herramientas open source que publican los fondos de forma pública.</p>
+        <p>Creemos que quien dona merece saber exactamente a dónde va su dinero. Por eso usamos plataformas establecidas y publicamos regularmente cómo se invierten los fondos.</p>
         <ul class="transparency-list">
           <li>
-            <span class="t-icon">🔓</span>
+            <span class="t-icon">💸</span>
             <div>
-              <strong>Código abierto</strong>
-              <p>Liberapay y Open Collective son plataformas cuyos códigos fuente están disponibles públicamente en GitHub.</p>
+              <strong>Donación directa</strong>
+              <p>Ko-fi y PayPal transfieren el dinero directamente a nuestra cuenta, sin intermediarios adicionales.</p>
             </div>
           </li>
           <li>
             <span class="t-icon">📊</span>
             <div>
               <strong>Gastos públicos</strong>
-              <p>Cualquier gasto realizado con fondos de la comunidad es visible para todos los donadores.</p>
+              <p>Publicamos mensualmente un resumen de en qué se usan los fondos en nuestro Discord y redes sociales.</p>
             </div>
           </li>
           <li>
             <span class="t-icon">🚫</span>
             <div>
               <strong>Sin comisiones ocultas</strong>
-              <p>Liberapay no cobra comisión de plataforma. Solo se aplican las tarifas estándar de Stripe o PayPal.</p>
+              <p>Ko-fi no cobra comisión de plataforma. Solo aplica la tarifa estándar de procesamiento de PayPal.</p>
             </div>
           </li>
         </ul>
@@ -211,7 +212,7 @@
             <div class="budget-bar"><div class="budget-fill" style="width:25%"></div></div>
           </div>
         </div>
-        <p class="budget-note">Actualizado mensualmente. Ver detalle completo en Open Collective →</p>
+        <p class="budget-note">Actualizado mensualmente. Consulta el detalle en nuestro Discord →</p>
       </div>
     </div>
   </section>

@@ -275,7 +275,7 @@
       about3t: 'Comunidad real',
       about3d: 'Discord activo, eventos colaborativos y espacio para jugadores de todos los niveles.',
       donateH:   '¿A dónde va tu donación?',
-      donateSub: 'Usamos plataformas 100% open source y transparentes. Sin intermediarios opacos.',
+      donateSub: 'Tu donación llega directamente a nosotros. Sin comisiones de plataforma ni intermediarios opacos.',
       kofiDesc:   'Donación única sin registro obligatorio. Ideal para apoyar rápidamente. <strong>Sin comisión de plataforma</strong>; solo aplica la tarifa de PayPal.',
       kofiF:      ['✔ Sin registro del donante', '✔ Pago con tarjeta o PayPal', '✔ Donación única o mensual', '✔ Fácil y rápido'],
       kofiBtn:    'Donar con Ko-fi',
@@ -283,15 +283,17 @@
       paypalF:    ['✔ Sin intermediarios', '✔ Pago con tarjeta o saldo PayPal', '✔ Seguro y confiable', '✔ Donación en cualquier monto'],
       paypalBtn:  'Donar por PayPal',
       transH:     'Transparencia total',
-      transIntro: 'Creemos que quien dona merece saber exactamente a dónde va su dinero. Por eso usamos herramientas open source que publican los fondos de forma pública.',
+      transIntro: 'Creemos que quien dona merece saber exactamente a dónde va su dinero. Por eso usamos plataformas establecidas y publicamos regularmente cómo se invierten los fondos.',
       transItems: [
-        { title: 'Código abierto',         desc: 'Liberapay y Open Collective son plataformas cuyos códigos fuente están disponibles públicamente en GitHub.' },
-        { title: 'Gastos públicos',        desc: 'Cualquier gasto realizado con fondos de la comunidad es visible para todos los donadores.' },
-        { title: 'Sin comisiones ocultas', desc: 'Liberapay no cobra comisión de plataforma. Solo se aplican las tarifas estándar de Stripe o PayPal.' },
+        { title: 'Donación directa',       desc: 'Ko-fi y PayPal transfieren el dinero directamente a nuestra cuenta, sin intermediarios adicionales.' },
+        { title: 'Gastos públicos',        desc: 'Publicamos mensualmente un resumen de en qué se usan los fondos en nuestro Discord y redes sociales.' },
+        { title: 'Sin comisiones ocultas', desc: 'Ko-fi no cobra comisión de plataforma. Solo aplica la tarifa estándar de procesamiento de PayPal.' },
       ],
       transBudgetTitle:  '¿Para qué se usa el dinero?',
       transBudgetLabels: ['Infraestructura (hosting, streaming)', 'Equipo (micrófonos, software)', 'Eventos y torneos comunitarios'],
-      transBudgetNote:   'Actualizado mensualmente. Ver detalle completo en Open Collective →',
+      transBudgetNote:   'Actualizado mensualmente. Consulta el detalle en nuestro Discord →',
+      platformBadge:     'Recomendado',
+      paypalSoonNote:    '⚙️ Enlace en configuración · disponible pronto',
       contactH:   '¿Tienes preguntas?',
       contactSub: 'Escríbenos sobre donaciones, patrocinios, colaboraciones o simplemente para saludar.',
       formSubtitle: 'Respondemos en menos de 48 horas',
@@ -329,7 +331,7 @@
       about3t: 'Real community',
       about3d: 'Active Discord, collaborative events and space for players of all levels.',
       donateH:   'Where does your donation go?',
-      donateSub: 'We use 100% transparent open source platforms. No shady middlemen.',
+      donateSub: 'Your donation goes directly to us. No platform fees or shady middlemen.',
       kofiDesc:   'One-time donation, no registration required. Perfect for quick support. <strong>No platform fee</strong>; only PayPal\'s standard rate applies.',
       kofiF:      ['✔ No donor registration', '✔ Pay by card or PayPal', '✔ One-time or monthly donation', '✔ Easy and fast'],
       kofiBtn:    'Donate with Ko-fi',
@@ -337,15 +339,17 @@
       paypalF:    ['✔ No intermediaries', '✔ Pay by card or PayPal balance', '✔ Safe and reliable', '✔ Any amount you choose'],
       paypalBtn:  'Donate via PayPal',
       transH:     'Full transparency',
-      transIntro: 'We believe that donors deserve to know exactly where their money goes. That\'s why we use open source tools that publish funds publicly.',
+      transIntro: 'We believe that donors deserve to know exactly where their money goes. That\'s why we use established platforms and regularly share how the raised funds are used.',
       transItems: [
-        { title: 'Open source',    desc: 'Liberapay and Open Collective are platforms whose source code is publicly available on GitHub.' },
-        { title: 'Public expenses', desc: 'Any expense made with community funds is visible to all donors.' },
-        { title: 'No hidden fees', desc: 'Liberapay charges no platform commission. Only Stripe or PayPal standard rates apply.' },
+        { title: 'Direct donation', desc: 'Ko-fi and PayPal transfer the money directly to our account, with no additional intermediaries.' },
+        { title: 'Public expenses', desc: 'We publish a monthly summary of how the funds are used on our Discord and social media.' },
+        { title: 'No hidden fees',  desc: 'Ko-fi charges no platform commission. Only PayPal\'s standard processing rate applies.' },
       ],
       transBudgetTitle:  'What is the money used for?',
       transBudgetLabels: ['Infrastructure (hosting, streaming)', 'Equipment (microphones, software)', 'Community events and tournaments'],
-      transBudgetNote:   'Updated monthly. See full details on Open Collective →',
+      transBudgetNote:   'Updated monthly. Check the details on our Discord →',
+      platformBadge:     'Recommended',
+      paypalSoonNote:    '⚙️ Link being set up · available soon',
       contactH:   'Got questions?',
       contactSub: 'Write to us about donations, sponsorships, collaborations or just to say hi.',
       formSubtitle: 'We respond within 48 hours',
@@ -429,9 +433,11 @@
       txt(ac[i].querySelector('p'),  d[1]);
     });
 
-    /* donate heading */
+    /* donate heading + badge + paypal note */
     var donHead = document.querySelector('#donar .section-head');
     if (donHead) { txt(donHead.querySelector('h2'), t.donateH); txt(donHead.querySelector('p'), t.donateSub); }
+    txt(document.getElementById('platform-badge-featured'), t.platformBadge);
+    txt(document.getElementById('platform-soon-note'), t.paypalSoonNote);
 
     /* platform cards */
     var cards = document.querySelectorAll('.platform-card');
